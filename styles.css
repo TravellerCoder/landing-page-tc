@@ -213,11 +213,11 @@ section {
 
     #menu-icon{
         display: block;
-        font-size: 45px; 
-        z-index: 101;
-        cursor: pointer;
     }
 
+    .nav-list.open{
+        right: 0;
+    }
 
     .nav-list{
         position: absolute;
@@ -257,11 +257,9 @@ section {
     }
 
     #menu-icon{
-        display: block;
         position: fixed;
         top: 35px;
         right: 15px;
-
     }
 
     .hero-text h1 {
