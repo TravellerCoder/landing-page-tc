@@ -208,3 +208,49 @@ section {
         display: none;
     }
 }
+
+@media (max-width:768px){
+    .nav-list{
+        display: none;
+    }
+
+    #menu-icon{
+        display: block;
+        font-size: 45px; 
+        z-index: 101;
+        cursor: pointer;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .hero-text{
+        text-align: start; 
+    }
+}
+
+@media (max-width: 550px){
+    .logo{
+        display: none;
+    }
+
+    .hero-text h1 {
+        font-size: 35px;
+    }
+
+    .hero-text p {
+        font-size: 60%;
+    }
+
+    .hero-img {
+    display: none;
+    }
+
+    .scroll-down i{
+        font-size: 30px;
+    }
+}
