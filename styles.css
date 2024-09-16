@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 3%;
+    background-color: transparent;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list a {
+    margin-left: 100px;
+    font-size: 22px;
+    border-bottom: 2px solid transparent;
+    transition: all .5s ease;
+}
+
+.nav-list a:hover {
+    border-bottom: 2px solid white;
+}
+
+#menu-icon{
+    display: none;
+    font-size: 45px; 
+    z-index: 101;
+    cursor: pointer;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon-action {
+    display: none;
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(200.59deg, #000000 0%, #3b4852 25%,  #55ade0 50%, #3f687e 75%, #193135 100%);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+section {
+    padding: 0 8%;
+}
+
+.hero-text h4 {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Nanum Gothic Coding", monospace;
+    margin-bottom: 30px;
+}
+
+.hero-text h3 {
+    font-size: 24px;
+    font-weight: 900;
+    font-family: "Nanum Gothic Coding", monospace;
+    margin: 15px 15px 0 0;
+}
+
+
+.hero-text h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.hero-text p{
+    font-size: 80%;
+    margin-bottom: 40px;
+    line-height: 1.9;
+}
+
+.hero-text a {
+    display: inline-block;
+    background-color: hsla(256, 93%, 30%, 0.678); 
+    font-family: "Nanum Gothic Coding", monospace;
+    border: 1px solid transparent;
+    padding: 15px 30px;
+    line-height: 1.4;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+}
+
+.hero-text a:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    transform: translateX(8px) translateY(5px) ;
+    font-size: 20px;
+    border-radius: 40px;
+}
+
+.hero-text a.hablemos {
+    background-color: transparent;
+    border: 1.5px solid white;
+}
+
+.hero-text i {
+    margin-right: 5px;
+    color: black;
+}
+
+.hero-img img {
+    width: 350px;
+    border-radius: 20px;
+    margin: 15% 0 0 15%;
+    height: auto;
+    transition: all 3.5s linear;
+}
+
+.hero-img img:hover {
+    width: 550px;
+    opacity: 0.7;
+}
+
+.icons {
+    position: absolute;
+    top: 50vh;
+    padding: 0 2%;
+    transform: translateY(-50%)
+}
+
+.icons i{
+    display: block;
+    margin: 30px;
+    font-size: 25px;
+    transition: all .8s ease;
+}
+
+.icons i:hover{
+    color:  hsla(256, 93%, 30%, 0.678);
+    transform: translateY(-5px);
+}
+
+.scroll-down{
+    position: absolute;
+    bottom: 6%;
+    right: 3%;
+}
+
+.scroll-down i{
+    display: block;
+    padding: 12px;
+    font-size: 35px;
+    background-color:  hsla(256, 93%, 30%, 0.678);
+    border-radius: 30px;
+    transition: all .6s ease;
+}
