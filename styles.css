@@ -73,7 +73,7 @@ section {
 }
 
 .hero-text h4 {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     font-family: "Nanum Gothic Coding", monospace;
     margin-bottom: 30px;
@@ -175,4 +175,36 @@ section {
     background-color:  hsla(256, 93%, 30%, 0.678);
     border-radius: 30px;
     transition: all .6s ease;
+}
+
+
+@media (max-width: 992px){
+
+    .nav-list a {
+        margin-left: 25px;
+        font-size: 18px;
+        border-bottom: 2px solid transparent;
+        transition: all .5s ease;
+    }
+    .hero {
+        padding: 0 3%;
+        transition: all 0.2s ease;
+    }
+
+    .hero-text h1 {
+        font-size: 45px;
+    }
+
+    .hero-text p {
+        font-size: 70%;
+    }
+
+    .hero-img img {
+        width: 250px;
+        margin: 15% 0 0 0;
+    }
+
+    .icons {
+        display: none;
+    }
 }
