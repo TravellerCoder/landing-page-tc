@@ -210,15 +210,49 @@ section {
 }
 
 @media (max-width:768px){
-    .nav-list{
-        display: none;
-    }
 
     #menu-icon{
         display: block;
         font-size: 45px; 
         z-index: 101;
         cursor: pointer;
+    }
+
+    .menu-icon-action{
+        display: block;
+        position: fixed;
+        top: 35px;
+        right: 15px;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .nav-list{
+        position: absolute;
+        right: -100%;
+        top: 100%;
+        width: 200px;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        transition: all .7s ease; 
+    }
+
+    .nav-list a {
+        display: block;
+        margin: 7px 0;
+        font-size: 18px;
+        border-bottom: 2px solid transparent;
+    }
+
+    #menu-toggle:checked + label.menu-icon-action + .nav-list{
+        right: 0;
     }
 
     .hero{
