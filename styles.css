@@ -218,18 +218,6 @@ section {
         cursor: pointer;
     }
 
-    .menu-icon-action{
-        display: block;
-        position: fixed;
-        top: 35px;
-        right: 15px;
-        z-index: 100;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        cursor: pointer;
-    }
 
     .nav-list{
         position: absolute;
@@ -251,10 +239,6 @@ section {
         border-bottom: 2px solid transparent;
     }
 
-    #menu-toggle:checked + label.menu-icon-action + .nav-list{
-        right: 0;
-    }
-
     .hero{
         display: flex;
         flex-direction: column;
@@ -270,6 +254,14 @@ section {
 @media (max-width: 550px){
     .logo{
         display: none;
+    }
+
+    #menu-icon{
+        display: block;
+        position: fixed;
+        top: 35px;
+        right: 15px;
+
     }
 
     .hero-text h1 {
